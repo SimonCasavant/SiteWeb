@@ -1,13 +1,13 @@
     body {
-        background: rgb(39, 39, 39);
+        background: rgb(255, 0, 0);
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
     }
     header {
-        background-color: rgb(25, 25, 25);
-        padding: 50px;
+        background-color: rgb(100, 0, 0);
+        padding: 10px 0px 10px 10px;
     }
 
     ul {
@@ -28,7 +28,7 @@
     }
 
     a:hover {
-        color: aqua;
+        color: gray;
     }
     
     section {
@@ -38,14 +38,25 @@
     }
 
     div {
-        background-color: white;
+        background-color: rgb(15, 15, 15);
         margin: 20px;
         height: 260px;
         width: 100%;
-        color: black;
+        color: white;
+    }
+
+    header .logo a {
+        background-image: url(https://external-preview.redd.it/bmDh9_qESHwrO5D8T72FkfirR5uurxVw_lTzbBLfCOA.jpg?auto=webp&s=dabf9c55680b7c574efbc8bb699a132d59496ff4);
+        background-size: 64px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        text-indent: -999999px;
+        width: 64px;
+        height: 64px;
+        
     }
 
     footer {
-        background-color: rgb(25, 25, 25);
+        background-color: rgb(100, 0, 0);
         padding: 20px;
     }
