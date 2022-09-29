@@ -1,51 +1,66 @@
-    body {
-        background: rgb(39, 39, 39);
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        background-color: rgb(25, 25, 25);
-        padding: 50px;
-    }
+body {
+    background: rgb(25, 33, 44);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(16, 24, 35);
+    padding: 10px 0px 10px 10px;
+}
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+li {
+    display:inline-block;
+    margin-right: 20px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 70, 84);
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    background-color: rgb(15, 15, 15);
+    margin: 20px;
+    height: 260px;
+    width: 100%;
+    color: white;
+}
+
+
+
+header .logo a {
+    background-image: url(https://external-preview.redd.it/bmDh9_qESHwrO5D8T72FkfirR5uurxVw_lTzbBLfCOA.jpg?auto=webp&s=dabf9c55680b7c574efbc8bb699a132d59496ff4);
+    background-size: 64px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -999999px;
+    width: 64px;
+    height: 64px;
     
-    }
+}
 
-    li {
-        display:inline-block;
-        margin-right: 20px;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    a:hover {
-        color: aqua;
-    }
-    
-    section {
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
-    }
-
-    div {
-        background-color: white;
-        margin: 20px;
-        height: 260px;
-        width: 100%;
-        color: black;
-    }
-
-    footer {
-        background-color: rgb(25, 25, 25);
-        padding: 20px;
-    }
+footer {
+    background-color: rgb(16, 24, 35);
+    padding: 20px;
+}
