@@ -34,15 +34,19 @@ a:hover {
 }
 
 section {
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     display: flex;
     flex-direction: row;
+}
+
+section.div-title  {
+    padding: 20px 20px 0px 20px;
 }
 
 div {
     background-color: rgb(15, 15, 15);
     margin: 20px;
-    height: 260px;
+    height: 320px;
     width: 100%;
     color: white;
 }
