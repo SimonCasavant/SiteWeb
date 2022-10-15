@@ -1,59 +1,69 @@
 body {
-    background: rgb(25, 33, 44);
+    background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg");
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: rgb(16, 24, 35);
-    padding: 10px 0px 10px 10px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
+nav {
+    display: flex;
 }
 
-li {
-    display:inline-block;
-    margin-right: 20px;
+a.navigation {
+    background-color: none;
+    flex: auto;
+    text-align: center;
+    padding: 20px;
 }
 
-
+header h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
 
 a {
     text-decoration: none;
     color: white;
 }
 
-a:hover {
-    color: rgb(255, 70, 84);
+nav a:hover {
+    color: red;
 }
 
 section {
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
 }
 
 section.div-title  {
-    padding: 20px 20px 0px 20px;
+    width: 720px;
+    text-align: center;
 }
 
-div {
+section div {
     background-color: rgb(15, 15, 15);
-    margin: 20px;
-    height: 320px;
-    width: 100%;
+    text-align: center;
+    font-weight: bold;
+
+    margin-bottom: 100px;
+    height: 405px;
+    width: 720px;
+
     color: white;
+    font-size: 28px;
 }
 
 
 
-header .logo a {
+/* header .logo a {
     background-image: url(https://external-preview.redd.it/bmDh9_qESHwrO5D8T72FkfirR5uurxVw_lTzbBLfCOA.jpg?auto=webp&s=dabf9c55680b7c574efbc8bb699a132d59496ff4);
     background-size: 64px;
     background-repeat: no-repeat;
@@ -63,8 +73,30 @@ header .logo a {
     height: 64px;
     
 }
-
+*/
 footer {
     background-color: rgb(16, 24, 35);
     padding: 20px;
+}
+
+/*@media all and (max-width: 2560px) {
+    div {
+        height: auto;
+       font-size: 120%;
+    }
+
+}
+
+@media all and (max-width: 1920px) {
+    div {
+        height: auto;
+        font-size: 120%;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    div {
+        background-color: red;
+    }
+
 }
