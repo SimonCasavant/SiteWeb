@@ -1,10 +1,32 @@
 body {
-    background-image: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg");
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
+
+/* Index.html */
+
+body.index {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/280/351/original/dark-red-yellow-modern-blurred-background-vector.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.index {
+    font-size: 36px;
+    padding-top: 150px;
+    padding-bottom: 10px;
+}
+
+nav.nav-index {
+    padding-top: 50px;
+
+}
+
+
+
 
 header {
     background-color: rgb(16, 24, 35);
