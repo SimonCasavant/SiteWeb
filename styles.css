@@ -5,101 +5,97 @@ body {
     background-size: cover;
     overflow: overlay;
 
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(70, 70, 70);
 
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+
+    min-height: 100vh;
 }
 
 header {
-    background-color: rgb(0, 138, 108);
-    padding-top: 20px;
+    position: fixed;
 }
 
-nav {
+header nav {
+    margin: 0;
+    padding-left: 5px;
+    background-color: rgb(15, 15, 15);
+    position: fixed;
+    width: 100%;
     display: flex;
 }
 
-a.navigation {
-    background-color: none;
-    flex: auto;
-    text-align: center;
-
-    border-radius: 4px, 2px, 4px, 2px;
-    border-color: white;
+header nav ul {
+    padding: 0;
+    margin: 0;
+    
 }
 
-nav a.navigation div {
-    border-radius: 4px, 2px, 4px, 2px;
-    border-color: white;
+header nav ul li {
+    list-style-type: none;
+    display: inline;
+    border-right: white solid 2px;
 }
 
-header h1 {
+header nav div.wix {
+    margin: auto 10px auto auto;
+    border-left: white solid 2px;
+}
+
+h1.title {
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
+    margin-top: 38px;
+    background-color: #45b077;
 }
 
 a {
     text-decoration: none;
     color: white;
+    display: inline-block;
+    padding: 10px 15px 10px 15px;
+    margin-right: 2px;
+
 }
 
-nav a:hover {
+a:hover {
     color: grey;
+}
+
+li.active a {
+    text-decoration: underline;
 }
 
 h1 {
     text-align: center;
 }
+
 section {
     text-align: center;
 }
 
-section.div-title  {
-    width: 720px;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    margin:auto;
-}
 
-section.videos div {
-    background-color: rgb(15, 15, 15);
-    text-align: center;
-    font-weight: bold;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:auto;
-
-    margin-bottom: 100px;
-    height: 405px;
-    width: 720px;
-
-    color: white;
-    font-size: 28px;
-}
 
 footer {
-    background-color: rgb(0, 138, 108);
-    padding: 20px;
-    width: 100%;
+    background-color: #45b077;
+    padding: 30px 20px 10px 20px;
 
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    
+    font-size: 12px;
+    text-align: end;
+
 }
+
 
 /* Index.html */
 
 body.index {
     background-image: url("https://static.vecteezy.com/system/resources/previews/002/280/351/original/dark-red-yellow-modern-blurred-background-vector.jpg");
-    size: 100%;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 section.index {
@@ -114,11 +110,10 @@ section.index h1 {
     margin: 20px;
 }
 
-section.nav-index {
-    width: fit-content;
-    margin: auto;
-
-
+body.index nav {
+    background-color: rgba(175, 175, 175, 0);
+    flex-direction: column;
+    margin-top: 50px;
 }
 
 section.nav-index a{
@@ -146,6 +141,7 @@ body.index button:hover {
     background-color: white;
     color: black;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media all and (min-width: 1920px) {
@@ -171,17 +167,22 @@ body.index button:hover {
 
 /* À-propos */
 
+body.a-propos {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 body.a-propos p {
     padding: 50px;
     font-size: 18px;
 }
-body.a-propos h1 {
-    padding-top: 50px;
-}
+
 section.img {
     padding-top: 20px;
+    padding-bottom: 150px;
     display: flex;
-    
 }
 
 section.img div{
@@ -195,6 +196,114 @@ section.img div{
 img {
     overflow: hidden;
     border: 5px solid black;
+}
+
+body.a-propos footer {
+    margin-top: auto;
+}
+
+/* Travail*/
+
+body.travail {
+    display: flex;
+    flex-direction: column;
+}
+
+body.travail div.blur {
+    position: absolute;
+    background-color: rgba(175, 175, 175, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+
+body.travail div.pop-up {
+    height: 80%;
+    width: 80%;
+    background-color: rgb(15, 15, 15);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+body.travail div.pop-up h1 {
+    margin: 20px;
+    font-size: 48px;
+}
+body.travail div.pop-up p {
+    text-align: center;
+    margin: 10%;
+    font-size: 24px;
+}
+
+body.travail div.pop-up button {
+    border: solid 3px white;
+    background-color: rgb(0, 138, 108);
+    font-size: 32px;
+    color: white;
+    width: 25%;
+    margin: auto;
+    justify-content: center;
+}
+
+body.travail div.pop-up button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 110, 86);
+
+}
+
+body.travail div.grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 40% 40%;
+    
+    color: white;
+    background-color: grey;
+
+    width: 80%;
+    height: 800px;
+}
+
+body.travail i {
+    border: dotted black 2px;
+}
+
+/* Vidéos */
+
+body.videos {
+    display: flex;
+    flex-direction: column;
+}
+
+section.div-title  {
+    text-align: center;
+    padding: 20px;
+    width: 720px;
+    margin: auto;
+    font-size: 18px;
+}
+
+section.videos div {
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+
+    margin-bottom: 100px;
+    height: 405px;
+    width: 720px;
+
+    color: white;
+    font-size: 28px;
 }
 
 /* SCROLLBAR */
