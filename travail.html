@@ -3,26 +3,50 @@
 <head>
     <title>Travail</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 
 
-<body>
+<body class="travail">
+    <div class="blur" id="pop-up">
+
+    <div class="pop-up">
+        <div><h1>Attention !</h1></div>
+        <div> <p>Cette page est en cours de dévloppement, il n'y a rien à voir ici pour l'instant. Revenez plus tard pour voir le progrès !</p> </div>
+        <button onclick="myFunction()">J'ai compris !</button>
+    </div>
+    </div>
+    
     <header>
         <nav>
-            <a class="navigation" href="index.html"> <div>Acceuil</div> </a>
-            <a class="navigation" href="a-propos.html"> <div>À propos</div> </a>
-            <a class="navigation" href="travail.html"> <div>Travail</div> </a>
-            <a class="navigation" href="videos.html"> <div>Vidéos</div> </a>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li class="active"><a href="travail.html">Travail</a></li>
+                <li><a href="videos.html">Vidéos</a></li>
+            </ul>
+            
+            <div class="wix"><a href="https://0961300.wixsite.com/simon-dery">Retour à Wix.com</a></div>
         </nav>
-        <h1>Travail</h1>
     </header>
 
-    <section>
-        <div>Rien à voir ici pour l'instant (:</div>
+    <section class="test">
+        <h1 class="title">Travail</h1>
+        <div class="grid">
+         <i>
+            <iframe width="320px" height="180px" src="https://www.youtube.com/embed/Qhaz36TZG5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            Trucs pour utiliser CSS dans mon travail.
+        </i>
+         <i>2</i>
+         <i>3</i>
+         <i>4</i>
+         <i>5</i>
+         <i>6</i>
+        </div>
     </section>
 
     <section>Big Rectangle</section>
-    <footer>This is a footer</footer></footer>
+    <footer>This is a footer</footer>
 
 </body>
 
