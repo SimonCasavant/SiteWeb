@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body {
     /*background-image: url("https://i.ibb.co/5sM8B9W/image.png"); */
     background-repeat: no-repeat;
@@ -8,7 +10,7 @@ body {
     background-color: rgb(70, 70, 70);
 
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 
@@ -17,6 +19,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 5;
 }
 
 header nav {
@@ -81,7 +84,7 @@ section {
 
 footer {
     background-color: #45b077;
-    padding: 30px 20px 10px 20px;
+    padding: 20px;
 
     font-size: 12px;
     text-align: end;
@@ -193,7 +196,7 @@ section.img div{
     background-color: grey;
 }
 
-img {
+body.a-propos img {
     overflow: hidden;
     border: 5px solid black;
 }
@@ -253,24 +256,17 @@ body.travail div.pop-up button {
 body.travail div.pop-up button:hover{
     cursor: pointer;
     background-color: rgb(0, 110, 86);
-
 }
 
-body.travail div.grid {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 360px 360px 360px;
-    grid-template-rows: 40% 40%;
-    
-    color: white;
-    background-color: grey;
-
-    width: 80%;
-    height: 800px;
+section.Valorant-Stats {
+    background-color: rgb(51, 51, 51);
+    height: 320px;
+    margin: 50px 0px 50px 0px;
 }
 
-body.travail i {
-    border: dotted black 2px;
+div.Simon h1 {
+    text-align: start;
+    padding-left: 20px ;
 }
 
 /* Vidéos */
@@ -305,6 +301,95 @@ section.videos div {
     color: white;
     font-size: 28px;
 }
+
+.progress {
+    position: fixed;
+    top: 38px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+.progress-container {
+    background-color: rgba(150, 150, 150, 0.6);
+    height: 5px;
+    width: 100%;
+}
+  
+.progress-bar {
+    background-color: white;
+    height: 5px;
+    width: 0%;
+}
+
+/* Casavant */
+
+.Casavant {
+
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    
+}
+
+.debug {
+    display: block;
+    width: auto;
+    height: 20px;
+}
+.Casavant section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.Casavant h1 {
+    font-size: 72px;
+    margin-bottom: 0;
+}
+
+.Casavant p {
+    font-size: 36px;
+}
+
+/* Valorant */
+
+.valorant {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 199, 199)
+}
+.image-header {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.textbox {
+    margin: auto;
+    border-left: grey 1px solid;
+    border-right: grey 1px solid;
+    color: rgb(15, 15, 15);
+}
+
+
+.textbox h1 {
+    font-size: 78px;
+    margin-top: 100px;
+    width: 1080px;
+    padding: 10px;
+}
+.textbox 
 
 /* SCROLLBAR */
 
