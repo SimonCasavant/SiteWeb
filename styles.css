@@ -362,6 +362,54 @@ section.videos div {
     font-size: 36px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr 100px;
+    min-width: 100vw;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.grid div {
+    background-color: rgb(70, 70, 70);
+    border: white 2px solid
+}
+
+.grid h1 {
+    margin: auto;
+}
+
+.project {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.student {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-start: 3;
+}
+
+.display {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.desc {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
 /* Valorant */
 
 .valorant {
