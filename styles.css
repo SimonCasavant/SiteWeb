@@ -330,21 +330,21 @@ section.videos div {
 .hidden {
     opacity: 0;
     filter: blur(8px);
-    transform: translateX(-100%);
-    transition: all 1s;
+/*    transform: translateX(-100%); */
+    transition: all 2s;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
+/*    transform: translateX(0); */
     
 }
 
 .debug {
     display: block;
     width: auto;
-    height: 20px;
+    height: 50px;
 }
 .Casavant section {
     display: grid;
@@ -371,29 +371,47 @@ section.videos div {
     gap: 20px;
     padding: 40px;
     box-sizing: border-box;
+    border-top: solid white 2px;
 }
 
 .grid div {
     background-color: rgb(70, 70, 70);
-    border: white 2px solid
+/*    border: white 2px solid */
+    display: flex;
+    flex-direction: column;
 }
 
 .grid h1 {
     margin: auto;
+    font-size: 48px;
+    border-bottom: white 2px solid;
+}
+
+
+.grid h2 {
+    font-size: 28px;
+}
+
+.grid p {
+    font-size: 24px;
+    text-align: center;
 }
 
 .project {
+
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
 .student {
-    display: grid;
+
     grid-column-start: 2;
     grid-column-start: 3;
 }
 
 .display {
+
+    padding: auto;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -408,8 +426,15 @@ section.videos div {
 .footer {
     grid-column-start: 1;
     grid-column-end: 4;
+    text-align:end;
 }
 
+/* Antoine */
+
+.Antoine img {
+    width: 80%;
+    margin: auto;
+}
 /* Valorant */
 
 .valorant {
