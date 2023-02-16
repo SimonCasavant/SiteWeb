@@ -347,7 +347,7 @@ section.videos div {
     width: auto;
     height: 50px;
 }
-.Casavant section {
+.Casavant section.big-title {
     display: grid;
     place-items: center;
     align-content: center;
@@ -363,12 +363,15 @@ section.videos div {
     font-size: 36px;
 }
 
+.project-container {
+    min-height: 80vh;
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 1fr 1fr 100px;
     min-width: 100vw;
-    min-height: 100vh;
+    min-height: 90vh;
     gap: 20px;
     padding: 40px;
     box-sizing: border-box;
@@ -394,25 +397,20 @@ section.videos div {
 }
 
 .grid p {
-    font-size: 24px;
-    text-align: center;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .project {
-
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
 
-.student {
-
-    grid-column-start: 2;
-    grid-column-start: 3;
+.project {
+    padding-top: 10px;
 }
 
 .display {
-
-    padding: auto;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -427,7 +425,6 @@ section.videos div {
 .footer {
     grid-column-start: 1;
     grid-column-end: 4;
-    text-align:end;
 }
 
 /* Antoine */
@@ -470,6 +467,63 @@ section.videos div {
         background-position: center;
     }
 }
+
+@media (max-width: 768px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1.2fr 1.5fr 0.5fr;
+        min-width: 100vw;
+        min-height: 90vh;
+        gap: 20px;
+        padding: 40px;
+        box-sizing: border-box;
+        border-top: solid white 2px;
+    }
+
+    .grid div {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .grid p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .grid h1 {
+        margin: auto;
+        font-size: 28px;
+        border-bottom: white 2px solid;
+    }
+    
+    
+    .grid h2 {
+        font-size: 22px;
+    }
+
+    .project {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .desc {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .display {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+    .footer {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
+
 /* Valorant */
 
 .valorant {
