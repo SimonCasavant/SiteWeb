@@ -355,7 +355,7 @@ section.videos div {
     max-width: 100vw;
 }
 
-.Casavant h1 {
+.Casavant section.big-title h1 {
     font-size: 72px;
     margin-bottom: 0;
 }
@@ -470,7 +470,9 @@ section.videos div {
 }
 
 @media all and (max-width: 768px) {
-
+    body {
+        max-width: 100vw;
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -478,7 +480,7 @@ section.videos div {
         min-width: 100vw;
         min-height: 90vh;
         gap: 20px;
-        padding: 40px;
+        padding: 10px;
         box-sizing: border-box;
         border-top: solid white 2px;
     }
@@ -495,13 +497,13 @@ section.videos div {
 
     .grid h1 {
         margin: auto;
-        font-size: 28px;
+        font-size: 24px;
         border-bottom: white 2px solid;
     }
     
     
     .grid h2 {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .project {
@@ -542,17 +544,16 @@ section.videos div {
     .progress {
         position: fixed;
         top: 36px;
-        width: 100vh;
+        width: 100vw;
         z-index: 2;
     }
 
-    .Casavant h1 {
+    .Casavant section.big-title h1 {
         font-size: 36px;
-        margin-bottom: 0;
     }
     
     .Casavant p {
-        font-size: 24px;
+        font-size: 16px;
     }
     
 }

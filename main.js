@@ -3,7 +3,7 @@
 function myFunction() {
     document.getElementById("pop-up").style.display = "none";
   }
-
+      
 function progressBarScroll() {
   let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
       height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
