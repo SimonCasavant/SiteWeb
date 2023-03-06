@@ -367,9 +367,10 @@ section.videos div {
 .project-container {
     min-height: 80vh;
 }
+
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px 1fr 1fr 100px;
     min-width: 100vw;
     min-height: 90vh;
@@ -396,36 +397,50 @@ section.videos div {
 
 .grid h2 {
     font-size: 28px;
+    text-align: center;
 }
 
 .grid p {
     font-size: 18px;
 }
 
+.grid .desc h2{
+    max-width: 720px;
+}
+
+.grid .desc p {
+    max-width: 720px;
+}
+
 .project {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     padding-top: 10px;
 }
 
 
 .display {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
 }
 
 .desc {
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
     text-align: justify;
 }
 
 .footer {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     text-align: center;
+    margin: auto;
+}
+
+.footer p {
+    margin: 0;
 }
 
 /* Antoine */
@@ -442,6 +457,18 @@ section.videos div {
 /* Raf H */
 
 .Raf-H .display{
+    margin: auto;
+}
+
+/* Jacob M. */
+
+h1 span {
+    color: rgb(206, 90, 90);
+}
+
+.display img {
+    width: 80%;
+    height: auto;
     margin: auto;
 }
 @keyframes slide {
