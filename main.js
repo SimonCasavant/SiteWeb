@@ -28,3 +28,8 @@ const observer = new IntersectionObserver((entries) => {
 });
 const hiddenElements =  document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+//fetch('https://api.henrikdev.xyz/valorant/v1/mmr/na/Simon/olo')
+//.then(res => res.json())
+//.then(data => {
+//  let output = 

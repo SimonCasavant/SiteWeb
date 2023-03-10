@@ -456,8 +456,8 @@ section.videos div {
 
 /* Raf H */
 
-.Raf-H .display{
-    margin: auto;
+.Raf-H .display {
+    margin: 18px auto 18px auto
 }
 
 /* Jacob M. */
@@ -469,8 +469,9 @@ h1 span {
 .display img {
     width: 80%;
     height: auto;
-    margin: auto;
+    margin: 18px auto 18px auto
 }
+
 @keyframes slide {
     25% {
         background-image: url("https://static.wixstatic.com/media/63f0e2_942348e17808469f9277e5b380a6c27f~mv2.jpg/v1/fill/w_600,h_338,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Core%20of%20the%20foundation.jpg");
