@@ -266,7 +266,8 @@ section.Valorant-Stats {
 
 div.Simon h1 {
     text-align: start;
-    padding-left: 20px ;
+    padding-left: 20px;
+    width: 50px;
 }
 
 /* Vidéos */

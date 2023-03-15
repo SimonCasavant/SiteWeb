@@ -29,7 +29,21 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements =  document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-//fetch('https://api.henrikdev.xyz/valorant/v1/mmr/na/Simon/olo')
-//.then(res => res.json())
-//.then(data => {
-//  let output = 
+const url = 'https://api.henrikdev.xyz/valorant/v1/mmr/na/Simon/olo'
+
+async function getData() {
+  const res = await fetch(url);
+  const fdata = await res.json();
+  const data = await fdata.data;
+  const {currenttierpatched, ranking_in_tier, elo, name, tag} = data;
+  document.getElementById('rank').textContent = 'Rank: ' + currenttierpatched + ' ' + ranking_in_tier + '/100'
+  document.getElementById('elo').textContent = 'Elo total: ' + elo
+  document.getElementById('name').textContent = name + '#' + tag
+}
+
+
+getData();
+
+//.catch(error => {
+//  console.log(error)
+//})
